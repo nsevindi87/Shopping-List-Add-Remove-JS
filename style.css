@@ -41,10 +41,10 @@ input,button{
 }
 
 li{
-    color: brown;
+    color: rgb(249, 179, 179);
     display: flex;
     justify-content: space-between;
     width: 200px;
-    font-size: 20px;
-    padding: 2px;
+    font-size: 30px;
+    padding: 10px;
 }

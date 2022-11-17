@@ -24,14 +24,14 @@ function addItem(){
 
 function addItemToList(newItem){
     const listItem = document.createElement("li")
-    const link = document.createComment("a")
-    const text = document.createComment("span")
+    const link = document.createElement("a")
+    const text = document.createElement("span")
     link.href = "#";
     link.className = "delete-item"
     link.innerHTML ='<i class="fas fa-trash"></i>'
     const newItemCreate = document.createTextNode(newItem);
     text.appendChild(newItemCreate)
-    link.appendChild(text)
+    listItem.appendChild(text)
     listItem.appendChild(link)
     list.appendChild(listItem)
     item.value=""
@@ -46,5 +46,3 @@ function deleteItem(e){
 function deleteAllItem(){
     listBody.innerHTML = ""
 }
-
-/* APPENDCHILD HATA VERIYOR */
